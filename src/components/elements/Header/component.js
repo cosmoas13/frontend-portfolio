@@ -39,7 +39,7 @@ export default class Header extends Component {
           <div className='max-w-7xl mx-auto'>
             <div className='flex justify-between items-center container'>
               <div className='cursor-pointer '>
-                <Image height={45} width={45} src={ICONS.LOGO_HEAD} />
+                <Image height={45} width={45} src={ICONS.LOGO_HEAD} alt='logo-header' />
               </div>
               <div className="hidden space-x-8 lg:flex">
                 {headerList.map((item, index) => {

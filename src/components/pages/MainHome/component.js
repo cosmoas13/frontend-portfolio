@@ -16,7 +16,7 @@ export default class MainHome extends Component {
           <div className='flex flex-col justify-center items-center'>
             <div className='mt-0'>
               <div className="cc-profile-image flex justify-center">
-                <a href="#"><img src={photo.src} /></a>
+                <a href="#"><Image src={photo} alt='logo-kevin' /></a>
               </div>
             </div>
             <div className='flex flex-col items-center justify-center mt-48'>
@@ -40,10 +40,11 @@ export default class MainHome extends Component {
                         className='flex items-center justify-center'
                         href={item.url}
                         target="_blank"
+                        rel="noreferrer"
                         data-bs-toggle="tooltip-top"
                         title={item.title}
                       >
-                        <Image src={item.icon} />
+                        <Image src={item.icon} alt='logo-mainhome' />
                       </a>
                     </div>
                   )
