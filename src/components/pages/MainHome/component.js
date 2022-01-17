@@ -16,7 +16,7 @@ export default class MainHome extends Component {
           <div className='flex flex-col justify-center items-center'>
             <div className='mt-0'>
               <div className="cc-profile-image flex justify-center">
-                <a href="#"><Image src={photo} alt='logo-kevin' /></a>
+                <a href="#"><img src={photo.src} alt='logo-kevin' /></a>
               </div>
             </div>
             <div className='flex flex-col items-center justify-center mt-48'>
@@ -25,10 +25,16 @@ export default class MainHome extends Component {
             </div>
             <div className='flex flex-row items-center justify-center mt-10 mb-12 z-10'>
               <div className='flex items-center justify-center rounded-md w-36 h-10 bg-slate-400 hover:bg-slate-500 mx-1 text-base cursor-pointer'>
-                <p className='text-white leading-3'>Hire Me</p>
+                <p className='text-white leading-3'>
+                  <a href="https://api.whatsapp.com/send?phone=6289608727198" target="_blank" rel="noreferrer">Hire Me</a>
+                </p>
               </div>
               <div className='flex items-center justify-center rounded-md w-36 h-10 bg-slate-400 hover:bg-slate-500 mx-1 text-base cursor-pointer'>
-                <p className='text-white leading-3'>Download CV</p>
+                <p className='text-white leading-3'>
+                  <a href="https://drive.google.com/file/d/1fxgYTvU7YiPHyCLj4xoyyYe2C_7ueu00/view?usp=sharing" target="_blank" rel="noreferrer">
+                    Download CV
+                  </a>
+                </p>
               </div>
             </div>
             <section className='pb-0 absolute mt-32'>

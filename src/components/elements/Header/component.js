@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MenuIcon } from '@heroicons/react/outline';
 import { headerList } from '../../../constants/listItems';
 import Image from 'next/image';
-import { ICONS, IMAGES } from '../../../configs';
+import { ICONS } from '../../../configs';
 
 export default class Header extends Component {
   state = {
@@ -35,7 +35,7 @@ export default class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="px-14 py-4 mx-auto bg-slate-900 sticky top-0 z-10">
+        <nav className="px-14 py-4 mx-auto bg-slate-900 sticky top-0 z-20">
           <div className='max-w-7xl mx-auto'>
             <div className='flex justify-between items-center container'>
               <div className='cursor-pointer '>

@@ -56,7 +56,7 @@
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     opacity: 0;
-    z-index: 10;
+    z-index: 5;
 }
 
 .cc-profile-image img {
