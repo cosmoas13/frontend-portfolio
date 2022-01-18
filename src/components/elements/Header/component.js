@@ -18,7 +18,7 @@ export default class Header extends Component {
 
   _renderPopUp() {
     return (
-      <div className='absolute w-screen z-20 bg-slate-900'>
+      <div className='fixed w-screen z-20 bg-slate-900'>
         <div className='flex flex-col px-4 md:hidden'>
           {headerList.map((item, index) => {
             return (

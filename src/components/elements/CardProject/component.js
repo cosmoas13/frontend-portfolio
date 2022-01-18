@@ -24,6 +24,11 @@ export default class Card extends Component {
                       </div>
                       <div className="flex-grow text-gray-300 text-center pb-4 pt-12 px-4">
                         <p className="leading-relaxed text-sm">{item.description}</p>
+                        <div className='bg-white hover:bg-gray-300 font-semibold text-slate-900 hover:text-white mt-3 mx-auto w-5/12 rounded-md'>
+                          <a href={item.urlData} target="_blank" rel="noreferrer">
+                            <p className="leading-relaxed text-sm">Visit Website</p>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

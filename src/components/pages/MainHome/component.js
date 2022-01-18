@@ -5,8 +5,9 @@ import Image from 'next/image';
 import { contactList, aboutList, skillList, workList, projectList } from '../../../constants/listItems';
 import CardAbout from '../../elements/CardAbout';
 import CardSkill from '../../elements/CardSkill';
-import CardEducation from '../../elements/CardWorking';
 import CardWorking from '../../elements/CardWorking';
+import CardProject from '../../elements/CardProject';
+import ScrollToTop from '../../elements/scrollTop';
 
 export default class MainHome extends Component {
   _renderContact = () => {
@@ -81,18 +82,19 @@ export default class MainHome extends Component {
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Work Experience</div>
-          <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg cursor-pointer">
+          <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
             <div className="flex flex-wrap sm:-m-4 mx-4 mb-4 mt-4">
-              <CardEducation data={workList} />
+              <CardWorking data={workList} />
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Project Experience</div>
-          <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg cursor-pointer">
+          <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
             <div className="flex flex-wrap sm:-m-4 mx-4 mb-4 mt-4">
-              <CardWorking data={projectList} />
+              <CardProject data={projectList} />
             </div>
           </div>
         </main>
+        <ScrollToTop />
       </React.Fragment>
     )
   }

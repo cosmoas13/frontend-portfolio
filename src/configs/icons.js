@@ -10,7 +10,9 @@ const icons = {
   UMEETME: require('../static/icons/ico-umeetme.jpg'),
   CODEX: require('../static/icons/ico-codex.jpg'),
   MAITREYAWIRA: require('../static/icons/ico-maitreyawira.jpg'),
-  WHITELABEL: require('../static/icons/ico-whitelabel.png')
+  WHITELABEL: require('../static/icons/ico-whitelabel.png'),
+  ARROW_TOP: require('../static/icons/ico-arrow-top.png'),
+  W_ARROW_TOP: require('../static/icons/ico-arrow-top-w.png')
 };
 
 export default icons;
