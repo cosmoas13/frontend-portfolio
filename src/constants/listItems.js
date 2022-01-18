@@ -142,6 +142,27 @@ export const projectList = [
     },
 ];
 
+export const personalList = [
+    {
+        name: 'Coronas19',
+        description: 'This website aims to be used in checking and tracking the spread of the COVID-19 virus, created using React.js and the neumorphism style',
+        icon: ICONS.ICO_CORONA,
+        urlData: 'https://coronas19.netlify.app/'
+    },
+    {
+        name: 'Tilawah Quran',
+        description: 'a website that is intended to display the suras contained in the Al-Quran, created and developed using React.js, Tailwind',
+        icon: ICONS.ICO_QURAN,
+        urlData: 'https://tilawah-quran.netlify.app/'
+    },
+    {
+        name: 'Tiket Tiket',
+        description: 'Tiket Tiket is an application that provides train tickets booking service, developed and built using Express.js, MySQL, and Sequileze ORM for Backend, React.js, Material-UI, Axios and Redux for Frontend',
+        icon: ICONS.ICO_TICKET,
+        urlData: '#'
+    },
+];
+
 export const educationList = [
     {
         title: 'PT. DumbWays Indonesia Teknologi',

@@ -14,7 +14,10 @@ const icons = {
   ARROW_TOP: require('../static/icons/ico-arrow-top.png'),
   W_ARROW_TOP: require('../static/icons/ico-arrow-top-w.png'),
   MDP: require('../static/icons/ico-mdp.jpg'),
-  DUMBWAYS: require('../static/icons/ico-dumbways.jpg')
+  DUMBWAYS: require('../static/icons/ico-dumbways.jpg'),
+  ICO_TICKET: require('../static/icons/ico-ticket.png'),
+  ICO_CORONA: require('../static/icons/ico-corona.png'),
+  ICO_QURAN: require('../static/icons/ico-quran.png')
 };
 
 export default icons;

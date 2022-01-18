@@ -8,6 +8,7 @@ import {
   skillList,
   workList,
   projectList,
+  personalList,
   educationList
 } from '../../../constants/listItems';
 import CardAbout from '../../elements/CardAbout';
@@ -102,9 +103,17 @@ export default class MainHome extends Component {
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Project Experience</div>
+          <p className='text-center italic text-gray-500'>office projects that I helped develop, some were made from scratch</p>
           <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
             <div className="flex flex-wrap sm:-m-4 mx-4 mb-4 mt-4">
               <CardProject data={projectList} />
+            </div>
+          </div>
+          <div className='text-center text-2xl font-bold'>Personal Project</div>
+          <p className='text-center italic text-gray-500'>In my spare time, I set aside time to make some websites</p>
+          <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
+            <div className="flex flex-wrap sm:-m-4 mx-4 mb-4 mt-4">
+              <CardProject data={personalList} />
             </div>
           </div>
         </main>
