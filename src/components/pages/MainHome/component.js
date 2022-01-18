@@ -15,7 +15,8 @@ import CardSkill from '../../elements/CardSkill';
 import CardWorking from '../../elements/CardWorking';
 import CardProject from '../../elements/CardProject';
 import CardEducation from '../../elements/CardEducation';
-import ScrollTop from '../../elements/ScrollTop';
+import ScrollTop from '../../elements/scrollTop';
+
 export default class MainHome extends Component {
   _renderContact = () => {
     return (
