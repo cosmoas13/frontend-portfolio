@@ -12,7 +12,9 @@ const icons = {
   MAITREYAWIRA: require('../static/icons/ico-maitreyawira.jpg'),
   WHITELABEL: require('../static/icons/ico-whitelabel.png'),
   ARROW_TOP: require('../static/icons/ico-arrow-top.png'),
-  W_ARROW_TOP: require('../static/icons/ico-arrow-top-w.png')
+  W_ARROW_TOP: require('../static/icons/ico-arrow-top-w.png'),
+  MDP: require('../static/icons/ico-mdp.jpg'),
+  DUMBWAYS: require('../static/icons/ico-dumbways.jpg')
 };
 
 export default icons;

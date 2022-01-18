@@ -6,7 +6,7 @@ export default class Card extends Component {
     return (
       <React.Fragment>
         <div className="text-gray-700 my-3 mx-3">
-          <h5 className="text-xl font-bold">About</h5>
+          <h5 className="text-xl font-bold">About Me</h5>
           <div className="flex items-center">
             <p className="text-gray-600">Hello! I am Kevin Web Developer. </p>
           </div>

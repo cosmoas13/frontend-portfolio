@@ -142,3 +142,21 @@ export const projectList = [
     },
 ];
 
+export const educationList = [
+    {
+        title: 'PT. DumbWays Indonesia Teknologi',
+        role: 'Fullstack Javascript',
+        job: 'Talent',
+        since: 'Feb 2020 - Mar 2020',
+        detail: 'Learn Express.js, React.js, and Axios',
+        icon: ICONS.DUMBWAYS,
+    },
+    {
+        title: 'Universitas MDP',
+        role: 'Teknik Informatika',
+        job: 'S1',
+        since: 'Sep 2015 - Mar 2019',
+        detail: 'Data Structure, Algorithms & Coding',
+        icon: ICONS.MDP,
+    },
+];

@@ -2,13 +2,20 @@ import React, { Component } from 'react';
 import Header from '../../elements/Header';
 import photo from '../../../static/images/kevin.jpg';
 import Image from 'next/image';
-import { contactList, aboutList, skillList, workList, projectList } from '../../../constants/listItems';
+import {
+  contactList,
+  aboutList,
+  skillList,
+  workList,
+  projectList,
+  educationList
+} from '../../../constants/listItems';
 import CardAbout from '../../elements/CardAbout';
 import CardSkill from '../../elements/CardSkill';
 import CardWorking from '../../elements/CardWorking';
 import CardProject from '../../elements/CardProject';
-import ScrollToTop from '../../elements/scrollTop';
-
+import CardEducation from '../../elements/CardEducation';
+import ScrollToTop from '../../elements/ScrollTop';
 export default class MainHome extends Component {
   _renderContact = () => {
     return (
@@ -79,6 +86,12 @@ export default class MainHome extends Component {
           <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg cursor-pointer">
             <div className="grid grid-cols-4 lg:grid-cols-7">
               <CardSkill data={skillList} />
+            </div>
+          </div>
+          <div className='text-center text-2xl font-bold'>Education Skill</div>
+          <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
+            <div className="grid grid-cols-1">
+              <CardEducation data={educationList} />
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Work Experience</div>

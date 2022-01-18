@@ -17,7 +17,7 @@ export default class Card extends Component {
                       <div className='bg-white h-32 relative'>
                         <h2 className="text-2xl title-font font-bold text-slate-800 text-center absolute right-0 left-0 bottom-0 top-8">{item.name}</h2>
                         <div className='text-center absolute top-20 right-0 left-0'>
-                          <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 mb-5 flex-shrink-0 p-2">
+                          <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-md mb-5 flex-shrink-0 p-2">
                             <Image width={55} height={55} src={item.icon} alt='logo-project' />
                           </div>
                         </div>
