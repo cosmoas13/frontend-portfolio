@@ -1,2 +1,2 @@
-import ScrollToTop from './component';
-export default ScrollToTop;
+import ScrollTop from './component';
+export default ScrollTop;

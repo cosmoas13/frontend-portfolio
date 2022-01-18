@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ICONS } from '../../../configs';
 import Image from 'next/image';
 
-export default class ScrollButton extends Component {
+export default class ScrollTop extends Component {
   state = {
     visible: 'false'
   }

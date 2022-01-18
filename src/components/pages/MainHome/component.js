@@ -15,7 +15,7 @@ import CardSkill from '../../elements/CardSkill';
 import CardWorking from '../../elements/CardWorking';
 import CardProject from '../../elements/CardProject';
 import CardEducation from '../../elements/CardEducation';
-import ScrollToTop from '../../elements/ScrollTop';
+import ScrollTop from '../../elements/ScrollTop';
 export default class MainHome extends Component {
   _renderContact = () => {
     return (
@@ -107,7 +107,7 @@ export default class MainHome extends Component {
             </div>
           </div>
         </main>
-        <ScrollToTop />
+        <ScrollTop />
       </React.Fragment>
     )
   }
