@@ -89,7 +89,7 @@ export default class MainHome extends Component {
               <CardSkill data={skillList} />
             </div>
           </div>
-          <div className='text-center text-2xl font-bold'>Education Skill</div>
+          <div className='text-center text-2xl font-bold'>Education</div>
           <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
             <div className="grid grid-cols-1">
               <CardEducation data={educationList} />
