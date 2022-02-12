@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 export default class CardEducation extends Component {
   render() {
-    const { data } = this.props;
+    const { data, id } = this.props;
     return (
       <React.Fragment>
         {data.map((item, index) => {
           return (
-            <div key={index} className='flex py-3'>
+            <div key={index} id={id} className='flex py-3'>
               <div className='flex bg-white py-3 w-16 relative'>
                 <div className='absolute top-8 left-2'>
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full shadow-md bg-white flex-shrink-0 p-2 mx-2.5">

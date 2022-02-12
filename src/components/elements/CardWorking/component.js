@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 export default class Card extends Component {
   render() {
-    const { data } = this.props;
+    const { data, id } = this.props;
     return (
       <section className="text-gray-200 bg-gray-100">
         <div className="flex flex-wrap sm:m-4 mx-4 mb-10 mt-4">
           {/* start */}
           {data.map((item, index) => {
             return (
-              <div key={index} className="p-10 lg:w-1/3 lg:mb-0 mb-6 flex flex-col">
+              <div key={index} id={id} className="p-10 lg:w-1/3 lg:mb-0 mb-6 flex flex-col">
                 <div className="pattern-dots-md bg-primary text-slate-900">
                   <div className="rounded-lg bg-slate-800 transform translate-x-6 -translate-y-6">
                     <div className='bg-white h-32 relative'>

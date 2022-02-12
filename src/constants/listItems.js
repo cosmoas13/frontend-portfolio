@@ -2,19 +2,23 @@ import { ICONS, IMAGES } from '../configs';
 export const headerList = [
     {
         name: 'About',
-        value: 'about'
+        value: 'about',
+        to: 'section1'
     },
     {
         name: 'Skill',
-        value: 'skill'
+        value: 'skill',
+        to: 'section2',
     },
     {
         name: 'Experience',
-        value: 'experience'
+        value: 'experience',
+        to: 'section3'
     },
     {
         name: 'Portfolio',
-        value: 'portfolio'
+        value: 'portfolio',
+        to: 'section4'
     },
 
 ];

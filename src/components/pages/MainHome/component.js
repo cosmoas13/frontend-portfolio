@@ -81,25 +81,25 @@ export default class MainHome extends Component {
         <main>
           <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg cursor-pointer">
             <div className="grid grid-cols-1 lg:grid-cols-2">
-              <CardAbout data={aboutList} />
+              <CardAbout data={aboutList} id="section1" />
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Professional Skill</div>
           <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg cursor-pointer">
             <div className="grid grid-cols-4 lg:grid-cols-7">
-              <CardSkill data={skillList} />
+              <CardSkill data={skillList} id="section2" />
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Education</div>
           <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
             <div className="grid grid-cols-1">
-              <CardEducation data={educationList} />
+              <CardEducation data={educationList} id="section3" />
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Work Experience</div>
           <div className="max-w-7xl mx-auto my-11 py-6 sm:px-24 lg:px-5 bg-gray-100 rounded-md shadow-md hover:shadow-lg">
             <div className="flex flex-wrap sm:-m-4 mx-4 mb-4 mt-4">
-              <CardWorking data={workList} />
+              <CardWorking data={workList} id="section4" />
             </div>
           </div>
           <div className='text-center text-2xl font-bold'>Project Experience</div>

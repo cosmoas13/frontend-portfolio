@@ -3,6 +3,7 @@ import { MenuIcon } from '@heroicons/react/outline';
 import { headerList } from '../../../constants/listItems';
 import Image from 'next/image';
 import { ICONS } from '../../../configs';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Header extends Component {
   state = {
@@ -13,8 +14,11 @@ export default class Header extends Component {
     e.preventDefault();
     const { show } = this.state;
     this.setState({ show: !show });
-    console.log(this.state.show);
   }
+
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
   _renderPopUp() {
     return (
@@ -23,7 +27,16 @@ export default class Header extends Component {
           {headerList.map((item, index) => {
             return (
               <a className='text-white py-1 px-10 cursor-pointer' key={index}>
-                <p className='hover:bg-gray-500 rounded-md'>{item.name}</p>
+                <Link
+                  activeClass="active"
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-220}
+                  duration={500}
+                >
+                  <p className='hover:bg-gray-500 rounded-md'>{item.name}</p>
+                </Link>
               </a>
             )
           })}
@@ -39,12 +52,29 @@ export default class Header extends Component {
           <div className='max-w-7xl mx-auto'>
             <div className='flex justify-between items-center container'>
               <div className='cursor-pointer '>
-                <Image height={45} width={45} src={ICONS.LOGO_HEAD} alt='logo-header' />
+                <Image
+                  height={45}
+                  width={45}
+                  src={ICONS.LOGO_HEAD}
+                  alt='logo-header'
+                  onClick={this.scrollToTop}
+                />
               </div>
               <div className="hidden space-x-8 lg:flex">
                 {headerList.map((item, index) => {
                   return (
-                    <a className='flex justify-center w-20 h-6 mx-auto text-white cursor-pointer hover:bg-gray-500 rounded-md' key={index}>{item.name}</a>
+                    <Link
+                      activeClass="active"
+                      to={item.to}
+                      spy={true}
+                      smooth={true}
+                      offset={-200}
+                      duration={500}
+                    >
+                      <a className='flex justify-center w-20 h-6 mx-auto text-white cursor-pointer hover:bg-gray-500 rounded-md' key={index}>
+                        {item.name}
+                      </a>
+                    </Link>
                   )
                 })}
               </div>
