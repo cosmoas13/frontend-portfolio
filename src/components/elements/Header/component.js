@@ -70,8 +70,9 @@ export default class Header extends Component {
                       smooth={true}
                       offset={-200}
                       duration={500}
+                      key={index}
                     >
-                      <a className='flex justify-center w-20 h-6 mx-auto text-white cursor-pointer hover:bg-gray-500 rounded-md' key={index}>
+                      <a className='flex justify-center w-20 h-6 mx-auto text-white cursor-pointer hover:bg-gray-500 rounded-md'>
                         {item.name}
                       </a>
                     </Link>
