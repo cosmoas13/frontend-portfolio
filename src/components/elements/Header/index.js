@@ -1,2 +1,3 @@
 import Header from './component';
-export default Header;
+import { withRouter } from 'next/router';
+export default withRouter(Header);

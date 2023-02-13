@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MainHome from '../components/pages/MainHome';
 
-export default class index extends Component {
-  render() {
-    return (
-      <MainHome />
-    )
-  }
+export default function index() {
+	return (
+		<div>
+			<MainHome />
+		</div>
+	);
 }
