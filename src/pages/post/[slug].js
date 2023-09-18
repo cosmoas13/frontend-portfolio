@@ -1,4 +1,6 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+
 import { getPosts, getPostDetails } from '../../services';
 import {
 	PostDetail,
@@ -7,10 +9,17 @@ import {
 	Author,
 	Comments,
 	CommentsForm,
+	Loader
 } from '../../components/elements/Blog';
 import Header from '../../components/elements/Header';
 
 function PostDetails({ post }) {
+	const router = useRouter();
+
+	if (router.isFallback) {
+		return <Loader />;
+	}
+
 	return (
 		<React.Fragment>
 			<Header />
@@ -51,6 +60,6 @@ export async function getStaticPaths() {
 
 	return {
 		paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
-		fallback: false,
+		fallback: true,
 	};
 }

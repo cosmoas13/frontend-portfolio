@@ -46,7 +46,7 @@ export default class Header extends Component {
 							);
 						})}
 						<a className='text-white py-1 px-10 cursor-pointer'>
-							<Link href='/blog'>
+							<Link passHref href='/blog'>
 								<p className='hover:bg-gray-500 rounded-md'>Blog</p>
 							</Link>
 						</a>
@@ -54,7 +54,7 @@ export default class Header extends Component {
 				) : (
 					<div className='flex flex-col px-4 md:hidden'>
 						<a className='text-white py-1 px-10 cursor-pointer'>
-							<Link href='/'>
+							<Link passHref href='/'>
 								<p className='hover:bg-gray-500 rounded-md'>Portfolio</p>
 							</Link>
 						</a>
@@ -108,7 +108,7 @@ export default class Header extends Component {
 							) : (
 								<div className='hidden space-x-8 lg:flex'>
 									<div className='flex justify-center w-20 h-6 mx-auto text-white cursor-pointer hover:bg-gray-500 rounded-md'>
-										<Link href='/'>
+										<Link passHref href='/'>
 											<p>Portfolio</p>
 										</Link>
 									</div>
